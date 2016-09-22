@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		/*
+		* Exercise Two
+		* Why does the following output true?
+		*/
+
+		var a = "false";
+		var b = true;
+
+		// "&&" is "and"
+		console.log (a && b); //this outputs true because even though "false" reads the word "false", it is not a boolean and rather a string. Any string that is not empty will automatically equate to "true", thus making the statement (a && b) === (true && true) thus === true.
+		
+		/*
+		* Bonus Question: Why does (b && a) log "false"? According to the rules of the && operator, it will return the first expression if it can be converted to false, which in this case, it cannot; otherwise, returns the second expression, "false" as a string rather than the boolean value. 
+		*/
+
+	</script>
+</body>
+</html>
